@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>My Portfolio</title>
-  </head>
+    <link href="./index.css" rel="stylesheet" />
+    <style>
+      body {
+        background: rgb(204, 204, 204);
+        width: 21cm;
+        height: 29.7cm;
+        margin: 0 auto;
+      }
 
+      page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5cm;
+        position: relative;
+      }
+
+      page[size="A4"] {
+        width: 21cm;
+        height: 29.7cm;
+      }
+
+      @page {
+        size: 21cm 29.7cm;
+        margin: 0mm;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Hello</h1>
-    <h2>I am a web developer</h2>
+    <page size="A4">
+      <div class="container">
+        <div class="leftPanel">
+          <img src="avatar.png" />
+          <div class="details">
+            <div class="item bottomLineSeparator">
+              <h2>CONTACT</h2>
+            </div>
+            <div class="item bottomLineSeparator">
+              <h2>SKILLS</h2>
+            </div>
+            <div class="item">
+              <h2>EDUCATION</h2>
+            </div>
+          </div>
+        </div>
+        <div class="rightPanel"></div>
+      </div>
+    </page>
+    <page size="A4"> </page>
   </body>
 </html>
